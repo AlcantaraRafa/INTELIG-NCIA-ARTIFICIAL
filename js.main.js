@@ -13,7 +13,7 @@ const perguntas= [
     }, 
 
     {
-    enunciado: "Qual a principal Usína Hidrelétrica do Brasil?",
+    enunciado: "Qual a principal Usína Hidrelétrica do mundo?",
     alternativas: [ "Hidrelétrica das Três Gargantas", "Usína Hidrelétrica de Itaipú"
     
     ]
@@ -37,5 +37,15 @@ const perguntas= [
      enunciado: "Com quantos soldados o Brasil contribuiu na Segunda Guerra Mundial?",
     alternativas: [ "Cerca de 25 mil Homens", "Cerca de 40 mil Homens"                
     ]
-    }, //Fecha objeto de perguntas
+    } //Fecha objeto de perguntas
 ]; //Fecha lista de perguntas
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
